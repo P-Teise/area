@@ -8,9 +8,11 @@ def shape_name(question):
         response = input(question).lower()
 
         if response == "triangle":
-            return ""
-        elif response == "square" or response == "rectangle":
-            return "quad"
+            return "triangle"
+        elif response == "square":
+            return "square"
+        elif response == "rectangle":
+            return "rectangle"
         elif response == "circle":
             return "circle"
         elif response == "trapezium":
@@ -21,7 +23,6 @@ def shape_name(question):
 
 # main routine goes here
 
-for item in range(0, 6):
-    wanted_area = shape_name("What shape area do you want to find?")
-    print("Answer OK, you said", wanted_area)
-    print()
+wanted_area = shape_name("What shape area do you want to find?")
+print("Answer OK, you said", wanted_area)
+print()
