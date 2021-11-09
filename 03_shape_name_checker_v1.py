@@ -13,6 +13,10 @@ def shape_name(question):
             return "square"
         elif response == "rectangle":
             return "rectangle"
+        elif response == "rhombus":
+            return "rhombus"
+        elif response == "kite":
+            return "kite"
         elif response == "circle":
             return "circle"
         elif response == "trapezium":
