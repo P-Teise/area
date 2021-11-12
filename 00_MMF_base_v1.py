@@ -64,7 +64,6 @@ def shape_name():
 name = not_blank("Shape name: ", "Sorry - this can't be blank. Please enter a valid shape.")
 
 # Get valid shape (has to be in boundary)
-
 wanted_area = shape_name()
 print("Answer OK, you said", )
 print()

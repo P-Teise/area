@@ -2,8 +2,7 @@
 
 def int_check(question, low_num, high_num):
 
-    error = "Please enter a whole number between {} " \
-            "and {}". format(low_num, high_num)
+    error = "Please enter a valid number higher than {}". format(low_num)
 
     valid = False
     while not valid:
@@ -12,8 +11,9 @@ def int_check(question, low_num, high_num):
         try:
             response = int(input(question))
 
-            if low_num <= response <= high_num:
+            if low_num <= response:
                 return response
+            if response = str(input())
             else:
                 print(error)
 
@@ -24,4 +24,4 @@ def int_check(question, low_num, high_num):
 # main routine goes here
 
 
-age = int_check("Age: ", 12, 130)
+length = int_check("Length 1: ", 0, 130)
