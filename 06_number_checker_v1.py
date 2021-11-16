@@ -27,5 +27,4 @@ def int_check(question, low_num):
 length = int_check("Enter Length 1: ", 0)
 print("Answer, OK you said:", length)
 print()
-#     if  = value_1:
-#                 return error return value_1
+
