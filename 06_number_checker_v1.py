@@ -1,6 +1,7 @@
 # functions go here
 
-def int_check(question, low_num) -> object:
+def int_check(question, low_num):
+
     error = "Please enter a valid number higher than {}".format(low_num)
 
     valid = False
@@ -8,10 +9,10 @@ def int_check(question, low_num) -> object:
 
         # ask user for number and check it is valid
         try:
-            value_1 = int(input(question))
+            value_1 = float(input(question))
 
-            if low_num <= value_1:
-                print(value_1.isnumeric())
+            if value_1 > low_num:
+                return value_1
 
             else:
                 print(error)
