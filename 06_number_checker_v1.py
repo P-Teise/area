@@ -1,7 +1,6 @@
 # functions go here
 
 def int_check(question, low_num):
-
     error = "Please enter a valid number higher than {}".format(low_num)
 
     valid = False
@@ -27,4 +26,3 @@ def int_check(question, low_num):
 length = int_check("Enter Length 1: ", 0)
 print("Answer, OK you said:", length)
 print()
-
