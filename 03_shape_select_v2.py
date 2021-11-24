@@ -1,4 +1,4 @@
-shapes_list = ['square', 'circle', 'trapezium', 'triangle', 'rhombus', 'kite']
+shapes_list = ['square', 'circle', 'trapezium', 'triangle', 'rhombus', 'kite', 'rectangle']
 
 
 # start shape select function
@@ -14,6 +14,7 @@ def shape_select(q):
     # begin loop of shape identification
     a = 0
     while a < len(shapes_list):
+
         # if shape is valid return name of the shape
         if shapes_list[a] == name:
             return name
@@ -35,3 +36,4 @@ if shape_name == 'err':
         shape_name = shape_select('Please enter in a shape: ')
         if shape_name != 'err':
             name_valid = True
+            print("Answer OK you said:", shape_name)
